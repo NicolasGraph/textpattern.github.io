@@ -32,8 +32,6 @@ not need all of these, but you should not need more than this. (Items in
 
 \#(roman) **Summary and version details**
 
-1.  Table of contents (use if you have more than three sections, or your
-    sections are long)
 2.  **List of features** (if you don't have many features, make this
     part of your summary)
 3.  **Minimum requirements** (even if no requirements, say that)
@@ -48,8 +46,7 @@ not need all of these, but you should not need more than this. (Items in
 12. **Author contact**
 
 Obviously, if your plugin provides a tag or more, you will include
-sections 7 and 11 in your help file (and perhaps 8–10), and thus a Table
-of Contents too.
+sections 7 and 11 in your help file (and perhaps 8–10).
 
 ## The template
 
@@ -64,21 +61,7 @@ need, if any. Nothing else but text editing should be needed.[^2]
 
     p. *Version:* current version number goes here.
 
-    h2. Table of contents
-
-    #(roman) "List of features":#sec01
-    # "Minimum requirements":#sec02
-    # "Installation":#sec03
-    # "Uninstallation":#sec04
-    # "Plugin tags":#sec05
-    # "Exposed functions":#sec06
-    # "Global variables":#sec07
-    # "Plugin events":#sec08
-    # "Examples":#sec09
-    # "License":#sec10
-    # "Author contact":#sec11
-
-    h2(#sec01). List of features
+    h2. List of features
 
     * Feature 1
     * Feature 2
@@ -92,15 +75,15 @@ need, if any. Nothing else but text editing should be needed.[^2]
     * Plugin dependency 1
     * Plugin dependency 2
 
-    h2(#sec03). Installation
+    h2. Installation
 
     p. Any special installation instructions.
 
-    h2(#sec04). Uninstallation
+    h2. Uninstallation
 
     p. Any special uninstallation instructions.
 
-    h2(#sec05). Plugin tags
+    h2. Plugin tags
 
     h3. prefix_tag_name1
 
@@ -122,9 +105,9 @@ need, if any. Nothing else but text editing should be needed.[^2]
     p. %attribute_name% %value_type%
     Description of the attribute usage.
 
-    h2(#sec06). Exposed functions
+    h2. Exposed functions
 
-    h3(tag). my_plugin_func
+    h3. my_plugin_func
 
     p. This function will do foo or bar.
 
@@ -134,19 +117,19 @@ need, if any. Nothing else but text editing should be needed.[^2]
     p. %arg_name% %arg_value_type%
     Argument description.
 
-    h2(#sec07). Global variables
+    h2. Global variables
 
     h3. $my_plugin_global
 
     p. This array is set during _blah_ and is false on failure.
 
-    h2(#sec08). Plugin events
+    h2. Plugin events
 
     h3. my_plugin.event
 
     p. This event is called when blah happens.
 
-    h2(#sec09). Examples
+    h2. Examples
 
     h3. Example 1
 
@@ -160,11 +143,11 @@ need, if any. Nothing else but text editing should be needed.[^2]
 
     bc. Example code
 
-    h2(#sec10). Licence
+    h2. Licence
 
     p. State any special license information here.
 
-    h2(#sec11). Author contact
+    h2. Author contact
 
     p. Developer contact details, or links to where one can get more help or make suggestions.
 
@@ -208,8 +191,7 @@ are the basic things to look for in the template.
 **Headers h1-h3:**
 
 -   `h1.` is for the help page title (the plugin's name).
--   `h2.` is for main sections of the help page, and include ID's to
-    enable the in-page Table of Contents lists (e.g. `h2(#sec1).`).
+-   `h2.` is for main sections of the help page.
 -   `h3.` is for subsections, and these should not have ID's or classes.
 
 **Paragraph copy:**
